@@ -7,7 +7,7 @@ function App() {
     <>
       <div className="container">
         <h1>Post Form</h1>
-        <form className="form-post">
+        <form className="form-post" onSubmit={""}>
           <label htmlFor="">
             <h3>Autore del post</h3>
             <input type="text" placeholder="post-author" />
@@ -19,13 +19,15 @@ function App() {
           <label htmlFor="">
             <h3>Contenuto del post</h3>
 
-            <textarea name="post-body" id="">
-              ciao
-            </textarea>
+            <textarea
+              name="post-body"
+              id=""
+              placeholder="inserisci il testo del post"
+            ></textarea>
           </label>
           <label htmlFor="">
             <h3>Condividi il post</h3>
-            <input type="checkbox" />
+            <input type="checkbox" onClick={""} />
           </label>
         </form>
       </div>
